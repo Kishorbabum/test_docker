@@ -4,7 +4,7 @@ services:
   web:
     image: kishorbabum9/my-test-docker:host  # Use the Docker image from Docker Hub
     ports:
-      - "5000:3000"  # Map port 4000 on the host to port 3000 in the container
+      - "5000:5000"  # Map port 4000 on the host to port 3000 in the container
     environment:
       - NODE_ENV=production  # Set the environment variable for production
     restart: unless-stopped  # Restart policy for the container
